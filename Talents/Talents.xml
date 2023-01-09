@@ -11,4 +11,33 @@
     <AddedRecipe itemidentifier="poweredweldingtool"/>
     <AddedRecipe itemidentifier="poweredcutter"/>
   </Talent>
+
+  <Override identifier="toolmaintenance">
+    <Talent identifier="toolmaintenance">
+      <Icon texture="Content/UI/TalentsIcons3.png" sheetindex="5,5" sheetelementsize="128,128"/>
+      <Description tag="talentdescription.toolmaintenance">
+        <Replace tag="[amount]" value="1" color="gui.green"/>
+      </Description>
+      <Description tag="talentdescription.unlockrecipe">
+        <Replace tag="[itemname]" value="entityname.nuclearweldingtool" color="gui.orange"/>
+      </Description>
+      <Description tag="talentdescription.unlockrecipe">
+        <Replace tag="[itemname]" value="entityname.nuclearcutter" color="gui.orange"/>
+      </Description>
+    <AddedRecipe itemidentifier="nuclearweldingtool"/>
+    <AddedRecipe itemidentifier="nuclearcutter"/>
+      <!-- Give once when unlocking the talent -->
+      <AbilityGroupEffect abilityeffecttype="None">
+        <Abilities>
+          <CharacterAbilityGivePermanentStat statidentifier="tool~toolmaintenance" stattype="IncreaseFabricationQuality" value="1" targetallies="true" setvalue="true"/>
+        </Abilities>
+      </AbilityGroupEffect>
+      <!-- Give every 60 seconds for late comers -->
+      <AbilityGroupInterval interval="60">
+        <Abilities>
+          <CharacterAbilityGivePermanentStat statidentifier="tool~toolmaintenance" stattype="IncreaseFabricationQuality" value="1" targetallies="true" setvalue="true"/>
+        </Abilities>
+      </AbilityGroupInterval>
+    </Talent>
+  </Override>
 </Talents>

@@ -96,9 +96,8 @@
       <ParticleEmitterHitItem identifiers="door,hatch,ductblock" particle="MistSmoke" particlespersecond="20" anglemin="-10" anglemax="10" velocitymin="10" velocitymax="100" />
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
       <sound file="Content/Items/Tools/WeldingLoop.ogg" type="OnUse" range="500.0" loop="true" />
-      <!-- when using, the contained battery detoriate (= lose power) -->
-      <StatusEffect type="OnUse" targettype="Contained" targets="fuelrod" Condition="-1.0" />
-      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumbatterycell" Condition="-0.5" />
+      <!-- when using, the contained fuel rod detoriate (= lose power) -->
+      <StatusEffect type="OnUse" targettype="Contained" targets="reactorfuel" Condition="-1.0" />
       <!-- welding a door, it will get stuck after a while -->
       <StatusEffect type="OnUse" targettype="UseTarget" targets="door,ductblock" Stuck="10.0" Condition="6.0" />
       <!-- do burn damage to characters -->
@@ -110,15 +109,14 @@
       <Fixable identifier="structure" />
       <NonFixable identifier="thalamus,ice" />
       <!-- mechanic skill 20 required to use the item -->
-      <RequiredSkill identifier="mechanical" level="40" />
+      <RequiredSkill identifier="mechanical" level="30" />
       <!-- if the skill requirement isn't met the batteries will be used 3 times as fast -->
-      <StatusEffect type="OnFailure" targettype="Contained" targets="batterycell" Condition="-3.0" />
-      <StatusEffect type="OnFailure" targettype="Contained" targets="fulguriumbatterycell" Condition="-1.5" />
+      <StatusEffect type="OnFailure" targettype="Contained" targets="reactorfuel" Condition="-3.0" />
       <LightComponent LightColor="1.0,0.9,0.7,1.0" Flicker="0.5">
         <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
       </LightComponent>
     </RepairTool>
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-7,45" itemrotation="-90" containedspritedepth="0.56" containedstateindicatorstyle="rod">
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-23,22" itemrotation="90" containedspritedepth="0.56" containedstateindicatorstyle="rod">
       <Containable items="reactorfuel" rotation="90"/>
       <SlotIcon texture="Content/UI/InventoryUIAtlas.png" sourcerect="907,947,107,27" origin="0.5,0.5" />
     </ItemContainer>
@@ -223,9 +221,8 @@
       <ParticleEmitterHitItem identifiers="ore" particle="iceshards" particlespersecond="5" anglemin="-40" anglemax="40" velocitymin="10" velocitymax="300" scalemin="0.5" scalemax="1.0" />
       <ParticleEmitterHitCharacter particle="fleshsmoke" particlespersecond="3" anglemin="-5" anglemax="5" velocitymin="10" velocitymax="100" />
       <sound file="Content/Items/Tools/PlasmaCutterLoop.ogg" type="OnUse" range="500.0" loop="true" />
-      <!-- when using, the contained battery detoriate (= lose power) -->
-      <StatusEffect type="OnUse" targettype="Contained" targets="batterycell" Condition="-0.5" />
-      <StatusEffect type="OnUse" targettype="Contained" targets="fulguriumbatterycell" Condition="-0.25" />
+      <!-- when using, the contained fuel rod detoriate (= lose power) -->
+      <StatusEffect type="OnUse" targettype="Contained" targets="reactorfuel" Condition="-1.0" />
       <!-- could cut through doors-->
       <StatusEffect type="OnUse" targettype="UseTarget" targets="door,ductblock,aliendoor" Stuck="-40.0" Condition="-6.0" />
       <StatusEffect type="OnUse" targettype="UseTarget" Condition="-6.0" />
@@ -236,15 +233,14 @@
       <!-- the tool can destroy structures, i.e. walls and windows -->
       <Fixable identifier="structure" />
       <!-- mechanic skill 20 required to use the item -->
-      <RequiredSkill identifier="mechanical" level="50" />
+      <RequiredSkill identifier="mechanical" level="40" />
       <!-- if the skill requirement isn't met the batteries will be used 3 times as fast -->
-      <StatusEffect type="OnFailure" targettype="Contained" targets="batterycell" Condition="-1.5" />
-      <StatusEffect type="OnFailure" targettype="Contained" targets="fulguriumbatterycell" Condition="-0.75" />
+      <StatusEffect type="OnFailure" targettype="Contained" targets="reactorfuel" Condition="-3.0" />
       <LightComponent LightColor="0.8,0.7,1.0,1.0" Flicker="0.5">
         <sprite texture="Content/Items/Electricity/lightsprite.png" origin="0.5,0.5" />
       </LightComponent>
     </RepairTool>
-    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="15,53" itemrotation="-90" containedspritedepth="0.56" containedstateindicatorstyle="rod">
+    <ItemContainer capacity="1" maxstacksize="1" hideitems="false" itempos="-1,30" itemrotation="90" containedspritedepth="0.56" containedstateindicatorstyle="rod">
       <Containable items="reactorfuel" rotation="90"/>
       <SlotIcon texture="Content/UI/InventoryUIAtlas.png" sourcerect="907,947,107,27" origin="0.5,0.5" />
     </ItemContainer>
