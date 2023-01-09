@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="English" nowhitespace="false" translatedname="English">
+  <talentname.poweredtools>Powered Tools</talentname.poweredtools>
+  <entityname.poweredweldingtool>Powered Welding Tool</entityname.poweredweldingtool>
+  <entitydescription.poweredweldingtool>Tool powered by electricity via batteries. It works as a basic welding tool.</entitydescription.poweredweldingtool>
+  <entityname.nuclearweldingtool>Nuclear Welding Tool</entityname.nuclearweldingtool>
+  <entitydescription.nuclearweldingtool>Tool powered by fuel rods. It works twice better as a basic welding tool.</entitydescription.nuclearweldingtool>
+  <entityname.poweredcutter>Powered Cutter</entityname.poweredcutter>
+  <entitydescription.poweredcutter>Tool powered by electricity via batteries. It works as a basic plasma cutter.</entitydescription.poweredcutter>
+  <entityname.nuclearcutter>Nuclear Cutter</entityname.nuclearcutter>
+  <entitydescription.nuclearcutter>Tool powered by fuel rods. It works twice better as a basic plasma cutter.</entitydescription.nuclearcutter>
+  <itemmsgfuelrodrequired>Fuel rod required</itemmsgfuelrodrequired>
+</infotexts>

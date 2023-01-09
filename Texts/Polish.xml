@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<infotexts language="Polish" nowhitespace="false" translatedname="Polski">
+  <talentname.poweredtools>Narzędzia Elektryczne</talentname.poweredtools>
+  <entityname.poweredweldingtool>Spawarka Elektryczna</entityname.poweredweldingtool>
+  <entitydescription.poweredweldingtool>Narzędzie zasilane energią elektryczną za pomocą baterii. Sprawdza się jako podstawowe narzędzie spawalnicze.</entitydescription.poweredweldingtool>
+  <entityname.nuclearweldingtool>Spawarka Jądrowa</entityname.nuclearweldingtool>
+  <entitydescription.nuclearweldingtool>Narzędzie zasilane energią elektryczną za pomocą prętów paliwowych. Działa dwa razy skuteczniej niż podstawowe narzędzie spawalnicze.</entitydescription.nuclearweldingtool>
+  <entityname.poweredcutter>Palnik Elektryczny</entityname.poweredcutter>
+  <entitydescription.poweredcutter>Narzędzie zasilane energią elektryczną za pomocą baterii. Sprawdza się jako podstawowe narzędzie tnące.</entitydescription.poweredcutter>
+  <entityname.nuclearcutter>Palnik Jądrowy</entityname.nuclearcutter>
+  <entitydescription.nuclearcutter>Narzędzie zasilane energią elektryczną za pomocą prętów paliwowych. Działa dwa razy skuteczniej niż podstawowe narzędzie tnące.</entitydescription.nuclearcutter>
+  <itemmsgfuelrodrequired>Wymagany pręt paliwowy</itemmsgfuelrodrequired>
+</infotexts>

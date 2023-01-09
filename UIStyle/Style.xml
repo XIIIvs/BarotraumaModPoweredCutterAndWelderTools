@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Style>
+  <ContainedStateIndicator.Rod>
+    <Sprite name="ContainedStateIndicator.Rod.None" texture="%ModDir%/UIStyle/ContainerIndicators.png" sourcerect="0,0,120,29" state="None"/>
+    <Sprite name="ContainedStateIndicator.Rod.Hover" texture="%ModDir%/UIStyle/ContainerIndicators.png" sourcerect="120,0,120,29" state="Hover"/>
+  </ContainedStateIndicator.Rod>
+</Style>
