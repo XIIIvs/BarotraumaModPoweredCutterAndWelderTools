@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<contentpackage name="Powered Cutter and Welder Tools" modversion="1.0.1" corepackage="False" steamworkshopid="2915254650" gameversion="0.20.16.1">
+<contentpackage name="Powered Cutter and Welder Tools" modversion="1.0.3" corepackage="False" steamworkshopid="2915254650" gameversion="1.2.8.0">
   <Text file="%ModDir%/Texts/English.xml" />
   <Text file="%ModDir%/Texts/Polish.xml" />
   <Item file="%ModDir%/Items/Tools/tools.xml" />
